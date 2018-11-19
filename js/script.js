@@ -16,20 +16,20 @@
 
 // Define the messages used in the game.
 let messages = {
-	"Help": {
-		"Title": "Help",
-		"Subtitle": "Some useful Links",
-		"Message": "<p><a href='https://monogatari.io/documentation/'>Documentation</a> - Everything you need to know.</p><p><a href='https://monogatari.io/demo/'>Demo</a> - A simple Demo.</p>"
-	}
+  "Help": {
+    "Title": "Help",
+    "Subtitle": "Some useful Links",
+    "Message": "<p><a href='https://monogatari.io/documentation/'>Documentation</a> - Everything you need to know.</p><p><a href='https://monogatari.io/demo/'>Demo</a> - A simple Demo.</p>"
+  }
 };
 
 // Define the notifications used in the game
 let notifications = {
-	"Welcome": {
-		title: "Welcome",
-		body: "This is the Monogatari VN Engine",
-		icon: ""
-	}
+  "Welcome": {
+    title: "Welcome",
+    body: "This is the Monogatari VN Engine",
+    icon: ""
+  }
 };
 
 // Define the Particles JS Configurations used in the game
@@ -64,75 +64,104 @@ const images = {
 
 // Define the backgrounds for each scene.
 const scenes = {
-	"Room": "room.png"
+  "Room": "room.png"
 };
 
 // Define the Characters
 const characters = {
-	"d": {
-		"Name": "Derpmaster",
-		"Color": "#5bcaff",
-		'Images': {
-			'Normal': 'derpmaster.png'
-		}
-	},
-	'b': {
-		'Name': 'Birdmaster',
-		'Color': "#DEADBE",
-		'Images': {
-			'Normal': 'birdmaster.png'
-		}
-	}
+  "c": {
+    "Name": "Coconut Bomb",
+    "Color": "#fedcba"
+  },
+  "g": {
+    "Name": "Glam Cake",
+    "Color": "#abcdef"
+  },
+  // probably unused
+  "d": {
+    "Name": "Derpmaster",
+    "Color": "#5bcaff",
+    'Images': {
+      'Normal': 'derpmaster.png'
+    }
+  },
+  'b': {
+    'Name': 'Birdmaster',
+    'Color': "#DEADBE",
+    'Images': {
+      'Normal': 'birdmaster.png'
+    }
+  }
 };
 
 let script = {
-	// The game starts here.
-	"Start": [
-		'clear',
+  // The game starts here.
+  "Start": [
+    'clear',
 
-		'scene green with fadeIn',
+    'scene green with fadeIn',
+// music also
+    "It is a peaceful morning in the town of Almond Blosom, as Glam Cake is calmly going about the finishing touches for breakfast...",
 
-		'd You know...',
+    "jump Kitchen"
 
-		'scene pink with fadeIn',
+  ],
 
-		'd I like pie...',
+  "Kitchen" : [
+    "g Coco-sweetie, time to eat.",
+    // metal music, coconutbomb appears
+    "c Sis, stop being so mushy!",
+    "g Hmmm-mmm, ok dear come eat your pancakes.",
 
-		'scene red with fadeIn',
+    "jump KitchenEncounter"
 
-		'show d Normal at left with fadeIn',
+  ],
 
-		'd llama...  LLAMA!!!',
+  "KitchenEncounter": [
+    {"Choice": {
+      "Power-up": {
+        "Text": "Power Up",
+        "Do": "jump KitchenPowerup"
+      },
+      "Whatev": {
+        "Text": "Whatev",
+        "Do": "c Pffft"
+      },
+      "Ooh": {
+        "Text": "Ooh, pancakes",
+        "Do": "c Ooh, pancakes"
+      },
+      "Not-Hungry": {
+        "Text": "Not hungry",
+        "Do": "g Suit yourself."
+      }
+    }},
 
-		'scene Room with fadeIn',
+    "llama",
+    "end"
+  ],
 
-		'show d Normal at right with fadeIn',
+  "KitchenPowerup": [
+    "g Not in the house",
+    "jump KitchenEncounter"
+  ],
 
-		'd nope!',
+  "Yes": [
 
-		'show b Normal at left with fadeIn',
-		'b i got cheese!',
+    "h That's awesome!",
+    "h Then you are ready to go ahead and create an amazing Game!",
+    "h I can't wait to see what story you'll tell!",
+    "end"
+  ],
 
-		'show d Normal at left',
-		'd GIMMEH DAT CHEEEZE!!!!!'
-	],
+  "No": [
 
-	"Yes": [
+    "h You can do it now.",
 
-		"h That's awesome!",
-		"h Then you are ready to go ahead and create an amazing Game!",
-		"h I can't wait to see what story you'll tell!",
-		"end"
-	],
+    "display message Help",
 
-	"No": [
-
-		"h You can do it now.",
-
-		"display message Help",
-
-		"h Go ahead and create an amazing Game!",
-		"h I can't wait to see what story you'll tell!",
-		"end"
-	]
+    "h Go ahead and create an amazing Game!",
+    "h I can't wait to see what story you'll tell!",
+    "end"
+  ]
 };
