@@ -11,6 +11,52 @@
  * =============================================================================
 **/
 
+#fight {
+  z-index: 15;
+  position: absolute;
+  top: 0px;
+  margin: 0px;
+  width: 100%;
+  clear: both;
+  text-align: center;
+  /* height: 50px; */
+}
+
+.progress-bar {
+  visibility: visible;
+  /* visibility: hidden; */
+
+  /* left: 0px;
+  right: 0px; */
+  top: 0px;
+  bottom: 0px;
+
+  height: 25px;
+  width: 40%;
+  background-color: #e0e0e0;
+  padding: 3px;
+  border-radius: 3px;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, .2);
+}
+
+.progress-left {
+  position: absolute;
+  left: 100px;
+}
+
+.progress-right {
+  position: absolute;
+  right: 100px;
+}
+
+.progress-bar-fill {
+  display: block;
+  height: 100%;
+  background-color: #659cef;
+  border-radius: 3px;
+  transition: width 500ms ease-in-out;
+}
+
 /**
  * ===========================
  * General Styling
@@ -151,18 +197,18 @@ button:hover {
 /* Styles for the desktop version of the Quick Menu*/
 @media screen and (min-width: 37.56255em) {
 
-	/* Quick Menu Style */
-	[data-ui="quick-menu"] {
+  /* Quick Menu Style */
+  [data-ui="quick-menu"] {
 
-	}
+  }
 
-	/* Quick Menu Buttons Style */
-	[data-ui="quick-menu"] span {
+  /* Quick Menu Buttons Style */
+  [data-ui="quick-menu"] span {
 
-	}
+  }
 
-	/* Quick Menu Buttons Style on Hover */
-	[data-ui="quick-menu"] span:hover {
+  /* Quick Menu Buttons Style on Hover */
+  [data-ui="quick-menu"] span:hover {
 
-	}
+  }
 }

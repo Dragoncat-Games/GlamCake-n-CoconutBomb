@@ -1,0 +1,284 @@
+SCENE #1 in Kitchen
+
+GC: "Hmmhmmhmmmhmmmm lets see, a little bit of this ...Oh! syrup!Coco Sweeeeetiiiie tim to eat! IF on'y I had some more blueberries, Oh well"
+
+CB: "Glam Cake quit calling me Coco. I'm Coconut BOMB sis! stop being so mushy"
+
+GC: "hmm-mm, ok coco sweetie come eat your pancakes.
+
+	CHOICES
+Pwer Up		Whatev		Oooh Pancakes!		Not Hungry
+|		|		|			|
+|		2a grumpy sit 	3a happy sit 		4a GC" Suit yourself" next SCENE 
+1a GlamC Rspnds						 
+|-> "Not in the House" "Please Stop" "SRSLY!!!???" "Stop scaring the neigbors"
+|-> "Keep it up and you'll be sorry" "RAINBOW PUNCH!" "I'm not fighting you" "not
+|-> funny" "Powering up won't solve all your problesm" Are you gonna do this forever?" 
+|->"Ok, I'm gonna leave now" " All that energy may break the windows" " Do you want 
+|-> Breakfast or not?"
+---------------------------------------------------
+
+SCENE #2 in kitchen now at table unless not hungry then from standing.
+
+GC: " I was looking in the pantry and we don't have everthing for our spectrum day cake.
+
+CB: "Spectrum Day! Today! Oh WOW I almost forgot.
+
+GC: (Giggle) forgetting your favorite hero's honor day... you must have woken up on the wrong side of the bed.
+
+CB: (sheepsih) "Yeah....."
+
+GB "Will you come with me into town and help get the rest of the ingredients?
+
+	CHOICES
+Sure!		Nah, I'll Stay Home		POWER UP!
+1b		2b				1a (GlamC Rspnds)
+-----------------------------------------------------------------
+(1b)
+CB: Sure! ( go to scene 3)
+--------------------------------------------------------------------
+(2b)
+Nah, I'll stay home (go to ending 1)
+--------------------------------------------
+
+ENDING #1
+
+GC: Ok, I'll go by myself, bye!
+
+CB goes out of kitchen, fade to family room. Watching TV. Clock on the wall shows that time goes by.
+
+BREAKING NEWS!!!!!: Magma Man has returned and is destroying Middle Park!!! Citizens of Almond Blossom, Please evacuate away from the city and keep out of the ay of police......WAIT! is that who I think it is ?! SPECTRUM! Spectrum is here! He's Stopping Magma Man! Magma Man is down citizens! He is being restrained! Looks Like our favorite hero got here in just he knick of time!" We are saved!
+
+CB: (shocked) "I missed seeing Spectrum....aw Shucks." THE END
+----------------------------------------------------------
+
+SCENE #3 Out side sidewalk, Cat in Sidewalk
+
+	CHOICES
+
+Walk around	POWER UP!
+|		|
+Scene 4		Engage fight - win - Scene 4
+------------------------------------------------------------
+
+SCENE #4 Bus stop, guy at bus stop already waiting.
+
+GC: Hello! ho are you?
+
+Stranger:...................fine............
+
+GC: "hhmmmm, ok........."
+
+	CHOICES
+
+Hey rude much?		Early Morning?		POWER UP!
+|			|			|
+1c.			2c.			3c.
+-------------------------------------------------------------
+
+(1c.)
+
+GC: Coconut Bomb, THAT'S rude.
+
+CB: Sorry......
+
+	CHOICES
+
+Early Morning?		POWER UP!
+|			|
+2c.			3c.
+--------------------------------------------------------------
+
+(2c.)
+
+Stranger: Yeah.....late night too (yawn)
+
+CB: "Ooooookaaaay............"
+
+wait for the bus, bus comes -> SCENE #5
+--------------------------------------------------------------
+
+(3c.)
+
+A. Be Scared
+
+Stranger: Oh, No! Please stop, I don't want to fight. Please leave me alone."
+
+	CHOICES
+
+Sorry		POWER UP!
+|		|
+4c		5c.
+-  -   -   -   -   -  -  -  -   -  -    -   -   -
+B. Engage in fight
+
+Stranger:......How did you know?...It doesn't matter, MAGMAMAN will reward me for taking you out for him!" 
+
+Engage in fight if win -> bus comes -> SCENE #5
+Engage in fight if lose -> GAME OVER
+-----------------------------------------------------------------
+
+(4c.)
+
+Wait for bus to come -> Scene #5
+-----------------------------------------------------------------
+
+(5c.)
+
+Glam Cake smacks cocnut bomb on the back of the head and coconut bomb sulks
+
+GC: "Sorry sir, he can be rather impertenent."
+
+Wait for bus -> bus comes -> SCENE #5
+-------------------------------------------------------------------
+
+SCENE #5 in town, bus drops off passengers. GC and CB walk into town and get to cross walk.
+Granny crossing the street looks like having issues.
+
+	CHOICES
+
+Help Granny		Do Nothing		POWER UP!
+|			|			|
+1d			2d			3d
+--------------------------------------------------------------------------
+
+(1d.)
+
+Granny: "Oh! Thank you, it's always so hard on my own."
+
+Help across street and continue on -> SCENE #6
+----------------------------------------------------------------------------
+
+(2d.)
+
+Keep walking GC will go back and help granny
+
+Granny: Oh! Thank you, it's always so hard on my own. 
+
+Help across street and continue on -> SCENE #6
+---------------------------------------------------------------------------
+
+(3d.)
+
+
+A. Be Scared
+
+Granny: Oh, No! Please stop, I don't want to fight. Please leave me alone."
+
+	CHOICES
+
+Sorry		POWER UP!
+|		|
+4d		5d.
+-  -   -   -   -   -  -  -  -   -  -    -   -   -
+B. Engage in fight
+
+Granny:......How did you know?...It doesn't matter, MAGMAMAN will reward me for taking you out for him!" 
+
+Engage in fight if win -> police come -> SCENE #6
+Engage in fight if lose -> GAME OVER
+----------------------------------------------------------------------------
+
+(4d.)
+
+	CHOICES
+
+Help		Walk Away
+|		|
+1d.		2d.
+----------------------------------------------------------------------------
+
+(5d.)
+
+50/50 chance of engage in fight GC Slap
+If slap -> 2d.
+if fight -> 3d. B.
+----------------------------------------------------------------------------
+
+SCENE #6 The Store
+
+GC + CB walk in.
+
+Clerk: " Why Hello Glam Cake and Coconut Bomb, how can I help you this fine Spectrum Day?"
+
+GC: "We need eggs, sugar and butter for our celebration cake!"
+
+CB: " Oooooh could we get sprinkles too?"
+
+GC: " Sure!...and a pack of sprinkles."
+
+Clear: "I'll get that right for you, hold on."
+(disapears from view, reappears with everthing)
+"Here you go, that'll be $382.15 cents."
+
+GC: (brow furrow) "Ususally that is A LOT less. why are you charging so much?"
+
+Clerk: "Well, It's Spectrum day and they are making me work even though it is a Holiday so I want more money."
+
+	CHOICES
+
+Makes Sense		That's Not Right!		POWER UP
+|			|				|
+1e.			2e.				3e.
+----------------------------------------------------------------------
+
+(1e.)
+
+Sadly shell out money -> SCENE #7
+----------------------------------------------
+
+(2e.)
+
+Clerk: "Right or not that's what I'm charging take it or leave it."
+
+	CHOICES
+
+Fine...We'll pay..	No, we'll go some place else.		POWER UP!
+|			|					|
+1e.			4e.					3e.
+-----------------------------------------------------------------------
+
+(3e.) Engage in fight
+
+If win -> pay usual price -> SCENE #7
+If lose -> Sadly Pay -> SCENE #7
+-----------------------------------------------------------------------
+
+(4e.)
+
+Clerk: "No! Wait!....fine, fine, pay the usual price..."
+
+pay-> SCENE #7
+-----------------------------------------------------------------------
+
+SCENE #7 walking past fountain in Park, Duck Flys by and graps sprinkles out of the top of the bag Coconut Bomb is carrying.
+
+	CHOICES
+
+Heh! Give that Back!		Darn....Oh Well...		POWER UP!
+|				|				|
+1f.				SCENE #8			1f.
+--------------------------------------------------------------------------
+
+(1f.)
+ENGAGE in fight!
+
+If win -> get sprinkles back -> SCENE #8
+If lose -> sprinkles are lost -> SCENE #8
+---------------------------------------------------------------------------
+
+SCENE #8 walking back across the granny intersection back to the bus.
+People are screa,ing, alarms, crashing, "It's MAGMAMAN!!!!!!!"
+
+
+
+
+
+
+
+
+ 
+
+
+
+
