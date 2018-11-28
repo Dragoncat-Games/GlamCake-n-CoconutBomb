@@ -12,7 +12,7 @@ var bus_powerup = {
 
 
 script["bus-stop"] = [
-  "scene green with fadeIn",
+  "scene bus-stop with fadeIn",
   "You arrive at the bus stop...",
   "There is a man there already waiting",
 

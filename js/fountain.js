@@ -1,7 +1,7 @@
 "use strict";
 
 script["fountain"] = [
-  "scene pink with fadeIn",
+  "scene park with fadeIn",
 
   "Walking past fountain in Park, Duck Flys by and graps sprinkles out of the top of the bag Coconut Bomb is carrying.",
 
@@ -12,7 +12,7 @@ script["fountain"] = [
     },
     "Darn": {
       "Text": "Darn... Oh well...",
-      "Do": "jump intersection"
+      "Do": "jump magma-park"
     },
     "Power-up": {
       "Text": "Power Up!",

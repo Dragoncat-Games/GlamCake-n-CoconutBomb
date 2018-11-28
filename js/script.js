@@ -64,8 +64,14 @@ const images = {
 
 // Define the backgrounds for each scene.
 const scenes = {
-  "Room": "room.png",
-  "kitchen": "KitchenScene.jpg"
+  "kitchen": "kitchen-scene.jpg",
+  "bus-stop": "bus-stop-scene.jpg",
+  "crosswalk": "city-crosswalk-scene.jpg",
+  "family-room": "family-room.jpg",
+  "hospital": "hospital-room.jpg",
+  "store": "store-scene.jpg",
+  "park": "park-scene.jpg",
+  "magma-park": "magma-park-scene.jpg"
 };
 
 // Define the Characters

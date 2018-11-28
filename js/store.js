@@ -1,7 +1,7 @@
 "use strict";
 
 script["store"] = [
-  "scene purple with fadeIn",
+  "scene store with fadeIn",
 
   "Glam Cake and Coconut Bomb get to the store and walk up to the counter",
 

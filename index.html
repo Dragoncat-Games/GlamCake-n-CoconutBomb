@@ -68,12 +68,15 @@
 
 	<link rel="manifest" href="manifest.json">
 
+	<!-- progress bars -->
+	<link rel="stylesheet" href="style/cssprogress.min.css" />
+
 	<link rel="stylesheet" href="style/animate.min.css">
 	<link rel="stylesheet" href="style/csshake.min.css">
 	<link rel="stylesheet" href="style/font-awesome.min.css">
 	<link rel="stylesheet" href="style/kayros.min.css">
 	<link rel="stylesheet" href="style/monogatari.css">
-	<link rel="stylesheet" href="style/main.css">
+	<link rel="stylesheet" title="main" href="style/main.css">
 
 	<script src="js/polyfill.min.js"></script>
 	<script src="js/jquery.min.js"></script>
@@ -88,7 +91,7 @@
 	<script src="js/main.js"></script>
 
 	<!-- additional parts of the script -->
-	<script src="js/FIGHT.JS"></script>
+	<!-- <script src="js/FIGHT.JS"></script> -->
 	<script src="js/kitchen.js"></script>
 	<script src="js/sidewalk.js"></script>
 	<script src="js/bus-stop.js"></script>
@@ -150,12 +153,23 @@
 
 		<!-- This game-specific fighting bars! -->
 		<div id="fight">
-			<div class="progress-bar progress-left">
-					<span id="player-health" class="progress-bar-fill" style="width: 50%;"></span>
+			<div class="fight-style cssProgress progress-opts progress-left">
+				<div class="progress2 glow">
+						<span id="player-health"
+									class="cssProgress-bar cssProgress-danger cssProgress-active"
+									style="width: 50%;">
+						</span>
+					</div>
+			</div>
+			<div class="fight-style cssProgress progress-opts progress-right">
+				<div class="progress2 glow">
+					<span id="enemy-health"
+								class="cssProgress-bar cssProgress-danger cssProgress-active-right cssProgress-right"
+								style="width: 70%;">
+					</span>
 				</div>
-				<div class="progress-bar progress-right">
-					<span id="enemy-health" class="progress-bar-fill" style="width: 70%;"></span>
-				</div>
+			</div>
+			<!-- <script>setup_fight()</script> -->
 		</div>
 
 		<div>

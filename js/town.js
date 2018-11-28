@@ -1,7 +1,7 @@
 "use strict";
 
 script["town"] = [
-  "scene red with fadeIn",
+  "scene crosswalk with fadeIn",
 
   "The bus gets you to town and drops off all the passengers",
   "Glam Cake and Coconut Bomb walk up to the crosswalk",
