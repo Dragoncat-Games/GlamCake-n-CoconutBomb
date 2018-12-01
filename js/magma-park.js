@@ -6,6 +6,7 @@ script["magma-park"] = [
 
   "scene magma-park with fadeIn",
   "show MM Angry right",
+  "play music Fight loop",
 
   "It's MAGMAMAN!!!!!!!",
 
@@ -65,6 +66,7 @@ script["spectrum-appears"] = [
   "wait 500",
   "show GC Trans2 left",
   "wait 500",
+  "hide GC",
   "show Spectrum Angry left",
 
   "MM NOOOOOOOOOOO!!!! Not Spectrum!!!!",
@@ -79,7 +81,7 @@ script["spectrum-appears"] = [
   },
   "show Spectrum Angry left",
 
-  "show MM Atk-Start left",
+  "show MM Atk-Start right",
   "wait 250",
   "show Spectrum Atk-Start left",
   "wait 250",
@@ -97,11 +99,14 @@ script["spectrum-appears"] = [
 
   "show Spectrum Angry right",
   "wait 250",
+  "hide Spectrum",
   "show GC Trans2 right fadeIn",
   "wait 250",
   "show GC Trans1-R right fadeIn",
   "wait 250",
   "show GC Neutral-R right fadeIn",
+
+  "play music Main loop",
 
   "GC Yep!",
 
@@ -178,7 +183,7 @@ script["spectrum-ok"] = [
   "show GC Neutral-R right",
   "Glamcake smiles.",
   "THE END......",
-  "jump the-end"
+  "jump end-credits"
 ];
 
 script["spectrum-tell"] = [
@@ -188,6 +193,7 @@ script["spectrum-tell"] = [
   "wait 250",
   "show GC Trans2-R right fadeIn",
   "wait 250",
+  "hide GC",
   "show Spectrum Angry-R right fadeIn",
   {"Choice": {
     "JK": {

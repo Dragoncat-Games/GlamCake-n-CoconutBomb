@@ -118,9 +118,11 @@ script["the-end"] = [
 ];
 
 script["end-credits"] = [
+  hide_fight_bars,
   "scene title with fadeIn",
   "Story by Megan & Justin Patera",
   "Images drawn and/or processed by Megan Patera",
+  "You can find her work at blue-ninja.com",
   "Coding by Justin Patera",
   "Monogatari was used as the visual novel library",
   "more words",

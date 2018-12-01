@@ -68,7 +68,7 @@ const scenes = {
   "park": "park-scene.jpg",
   "magma-park": "magma-park-scene.jpg",
   "KO": "KO.png",
-  "game-over": "game-over.png"
+  "game-over": "game-over.jpg"
 };
 
 // Define the Characters

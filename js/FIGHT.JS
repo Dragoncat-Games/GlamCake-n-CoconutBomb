@@ -309,7 +309,6 @@ function make_enemy_fight(player, enemy) {
 function reset_all() {
   CoconutBomb.health = CoconutBomb.max_health;
   GlamCake.health = GlamCake.max_health;
-  Spectrum.health = Spectrum.max_health;
 }
 
 function fight(enemy) {
