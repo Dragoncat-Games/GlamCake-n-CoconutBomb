@@ -16,20 +16,12 @@
 
 // Define the messages used in the game.
 let messages = {
-  "Help": {
-    "Title": "Help",
-    "Subtitle": "Some useful Links",
-    "Message": "<p><a href='https://monogatari.io/documentation/'>Documentation</a> - Everything you need to know.</p><p><a href='https://monogatari.io/demo/'>Demo</a> - A simple Demo.</p>"
-  }
+
 };
 
 // Define the notifications used in the game
 let notifications = {
-  "Welcome": {
-    title: "Welcome",
-    body: "This is the Monogatari VN Engine",
-    icon: ""
-  }
+
 };
 
 // Define the Particles JS Configurations used in the game
@@ -86,26 +78,37 @@ const characters = {
     "Color": "#abcdef",
     "Directory": "GlamCake",
     "Images": {
-      "Neutral": "GlamCake-Neutral.png"
+      "Neutral": "glamcake-neutral.png",
+      "Helpful": "glamcake-helpful.png",
+      "Sad": "glamcake-sad.png",
+      "Scold": "glamcake-scold.png",
+      "Serious": "glamcake-serious.png",
+      "Trans1": "glamcake-spec-trans-1.png",
+      "Trans2": "glamcake-spec-trans-2.png",
+      "Unsure": "glamcake-unsure.png",
+
+      "Angry": "glamcake-angry.png",
+      "Atk-Start": "glamcake-prep-attack.png",
+      "Attack": "glamcake-attack.png"
     }
   },
   "Spectrum": {
     "Name": "Spectrum",
     "Color": "#abcdef",
     "Images": {
-      "Gather": "spectrum-gather-power.png",
-      "Neutral": "spectrum-neutral.png",
-      "Throw": "spectrum-throw.png"
+      "Atk-Start": "spectrum-gather-power.png",
+      "Angry": "spectrum-neutral.png",
+      "Attack": "spectrum-throw.png"
     }
   },
   "MM": {
     "Name": "Magma Man",
     "Color": "#ff0000",
     "Images": {
-      "Neutral": "magmaman-neutral.png",
+      "Angry": "magmaman-neutral.png",
       "Arms-Up": "magmaman-arms-up.png",
-      "Lava": "magmaman-lava-ball.png",
-      "Throw": "magmaman-throw.png"
+      "Atk-Atart": "magmaman-lava-ball.png",
+      "Attack": "magmaman-throw.png"
     }
   },
 
@@ -114,16 +117,25 @@ const characters = {
     "Name": "Newscaster Bob"
   },
   "Cat": {
-    "Name": "Nyan Meow"
+    "Name": "Nyan Meow",
+    "Images": {
+      "Asleep": "cat-asleep.png",
+      "Awake": "cat-awake.png",
+
+      "Angry": "cat-awake.png",
+      "Attack": "cat-fire.png",
+      "Atk-Start": "cat-flame.png"
+    }
   },
   "Stranger": {
     "Name": "Stranger",
     "Images": {
-      "Angry": "tired-guy-angry.png",
-      "Glow": "tired-guy-glow.png",
-      "Lasers": "tired-guy-lasers.png",
       "Neutral": "tired-guy-resting-neutral.png",
-      "Scared": "tired-guy-scared.png"
+      "Scared": "tired-guy-scared.png",
+
+      "Angry": "tired-guy-angry.png",
+      "Atk-Start": "tired-guy-glow.png",
+      "Attack": "tired-guy-lasers.png"
     }
   },
   "Granny": {
@@ -131,38 +143,36 @@ const characters = {
     "Images": {
       "Neutral": "granny-happy-neutral.png",
       "Scared": "granny-scared.png",
-      "Mad": "granny-mad.png",
-      "Rock": "granny-rock.png",
-      "Throw": "granny-throw.png",
+
+      "Angry": "granny-mad.png",
+      "Atk-Start": "granny-rock.png",
+      "Attack": "granny-throw.png",
       "ScaredM": "granny-scared-m.png"
     }
   },
   "Clerk": {
     "Name": "Clerk",
     "Images": {
-      "Angry": "store-clerk-angry.png",
-      "Atk-Start": "store-clerk-attack-start.png",
-      "Attack": "store-clerk-dollars-out.png",
       "Bag-Happy": "store-clerk-holding-bag.png",
       "Bag-Sad": "store-clerk-holding-bag-sad.png",
       "Neutral": "store-clerk-neutral.png",
-      "Sad": "store-clerk-sad.png"
-    }
-  },
+      "Sad": "store-clerk-sad.png",
 
-  // probably unused
-  "d": {
-    "Name": "Derpmaster",
-    "Color": "#5bcaff",
-    'Images': {
-      'Normal': 'derpmaster.png'
+      "Angry": "store-clerk-angry.png",
+      "Atk-Start": "store-clerk-attack-start.png",
+      "Attack": "store-clerk-dollars-out.png"
     }
   },
-  'b': {
-    'Name': 'Birdmaster',
-    'Color': "#DEADBE",
-    'Images': {
-      'Normal': 'birdmaster.png'
+  "Duck": {
+    "Name": "Filching Fowl",
+    "Images": {
+      "Grab": "duck-getting-sprinkles.png",
+      "Landed": "duck-landed.png",
+      "Landing": "duck-landing.png",
+
+      "Angry": "duck-landed.png",
+      "Atk-Start": "duck-start-attack.png",
+      "Attack": "duck-attack.png"
     }
   }
 };

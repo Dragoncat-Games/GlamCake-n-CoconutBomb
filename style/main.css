@@ -37,9 +37,9 @@
 }
 
 .glow-blue {
-  -webkit-animation: superGlowBlue 3s linear infinite;
-  -ms-animation: superGlowBlue 3s linear infinite;
-  animation: superGlowBlue 3s linear infinite;
+  -webkit-animation: superGlowBlue 5s linear infinite;
+  -ms-animation: superGlowBlue 5s linear infinite;
+  animation: superGlowBlue 5s linear infinite;
 }
 @-webkit-keyframes superGlowBlue {
   0%, 100% {
@@ -67,9 +67,9 @@
 }
 
 .glow-red {
-  -webkit-animation: superGlowRed 3s linear infinite;
-  -ms-animation: superGlowRed 3s linear infinite;
-  animation: superGlowRed 3s linear infinite;
+  -webkit-animation: superGlowRed 5s linear infinite;
+  -ms-animation: superGlowRed 5s linear infinite;
+  animation: superGlowRed 5s linear infinite;
 }
 @-webkit-keyframes superGlowRed {
   0%, 100% {
