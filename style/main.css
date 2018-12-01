@@ -36,12 +36,42 @@
   width: 40%;
 }
 
-.glow {
-  -webkit-animation: superGlowAwesome 3s linear infinite;
-  -ms-animation: superGlowAwesome 3s linear infinite;
-  animation: superGlowAwesome 3s linear infinite;
+.glow-blue {
+  -webkit-animation: superGlowBlue 3s linear infinite;
+  -ms-animation: superGlowBlue 3s linear infinite;
+  animation: superGlowBlue 3s linear infinite;
 }
-@-webkit-keyframes superGlowAwesome {
+@-webkit-keyframes superGlowBlue {
+  0%, 100% {
+    box-shadow: 10px 0px 20px 0px #5350ef;
+  }
+  45% {
+    box-shadow: 2px 0px 8px 0px #5350ef;
+  }
+}
+@-ms-keyframes superGlowBlue {
+  0%, 100% {
+    box-shadow: 10px 0px 20px 0px #5350ef;
+  }
+  45% {
+    box-shadow: 2px 0px 8px 0px #5350ef;
+  }
+}
+@keyframes superGlowBlue {
+  0%, 100% {
+    box-shadow: 10px 0px 20px 0px #5350ef;
+  }
+  45% {
+    box-shadow: 2px 0px 8px 0px #5350ef;
+  }
+}
+
+.glow-red {
+  -webkit-animation: superGlowRed 3s linear infinite;
+  -ms-animation: superGlowRed 3s linear infinite;
+  animation: superGlowRed 3s linear infinite;
+}
+@-webkit-keyframes superGlowRed {
   0%, 100% {
     box-shadow: 10px 0px 20px 0px #ef5350;
   }
@@ -49,7 +79,7 @@
     box-shadow: 2px 0px 8px 0px #ef5350;
   }
 }
-@-ms-keyframes superGlowAwesome {
+@-ms-keyframes superGlowRed {
   0%, 100% {
     box-shadow: 10px 0px 20px 0px #ef5350;
   }
@@ -57,7 +87,7 @@
     box-shadow: 2px 0px 8px 0px #ef5350;
   }
 }
-@keyframes superGlowAwesome {
+@keyframes superGlowRed {
   0%, 100% {
     box-shadow: 10px 0px 20px 0px #ef5350;
   }

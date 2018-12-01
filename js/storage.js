@@ -4,7 +4,6 @@
 let storage = {
 	player: {
 		name: "",
-		breakfast: false,
-		wait_times: 0
+		breakfast: false
 	}
 };

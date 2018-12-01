@@ -98,7 +98,7 @@
 	<script src="js/town.js"></script>
 	<script src="js/store.js"></script>
 	<script src="js/fountain.js"></script>
-	<script src="js/intersection.js"></script>
+	<script src="js/magma-park.js"></script>
 	<script src="js/endings.js"></script>
 
 </head>
@@ -154,19 +154,22 @@
 		<!-- This game-specific fighting bars! -->
 		<div id="fight">
 			<div class="fight-style cssProgress progress-opts progress-left">
-				<div class="progress2 glow">
-						<span id="player-health"
-									class="cssProgress-bar cssProgress-danger cssProgress-active"
+				<div class="progress2 glow-blue">
+						<div id="player-health"
+									class="cssProgress-bar cssProgress-active"
 									style="width: 50%;">
-						</span>
+							<span class="cssProgress-label">Coconut Bomb Health</span>
+						</div>
 					</div>
 			</div>
+
 			<div class="fight-style cssProgress progress-opts progress-right">
-				<div class="progress2 glow">
-					<span id="enemy-health"
+				<div class="progress2 glow-red">
+					<div id="enemy-health"
 								class="cssProgress-bar cssProgress-danger cssProgress-active-right cssProgress-right"
 								style="width: 70%;">
-					</span>
+						<span class="cssProgress-label">Enemy Health</span>
+					</div>
 				</div>
 			</div>
 			<!-- <script>setup_fight()</script> -->

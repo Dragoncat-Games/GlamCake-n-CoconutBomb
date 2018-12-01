@@ -3,8 +3,12 @@
 script["town"] = [
   "scene crosswalk with fadeIn",
 
+  "show GC Neutral left",
+
   "The bus gets you to town and drops off all the passengers",
   "Glam Cake and Coconut Bomb walk up to the crosswalk",
+
+  "show Granny Neutral left",
   "There is an old lady trying to cross the street and looks like she is having issues",
 
   "jump town-granny-choice"
@@ -28,13 +32,32 @@ script["town-granny-choice"] = [
 ]
 
 script["town-help"] = [
+  "show GC Neutral center",
+  "show CB Neutral center",
+  "show Granny Neutral center",
   "Granny Oh! Thank you, it's always so hard on my own.",
+
+  "show GC Neutral right",
+  "show CB Neutral right",
+  "show Granny Neutral right",
+  "Coconut Bomb helps Granny across the intersection",
+
+  "jump store"
+];
+
+script["town-gc-help"] = [
+  "show GC Neutral center",
+  "show Granny Neutral center",
+  "Granny Oh! Thank you, it's always so hard on my own.",
+  "show GC Neutral right",
+  "show Granny Neutral right",
+  "Glam Cake helps Granny across the intersection",
   "jump store"
 ];
 
 script["town-nothing"] = [
   "Coconut Bomb keeps walking, but Glam Cake turns back and helps Granny.",
-  "jump town-help"
+  "jump town-gc-help"
 ];
 
 script["town-powerup"] = [
@@ -49,6 +72,7 @@ script["town-powerup"] = [
 ];
 
 script["town-scared"] = [
+  "show Granny Scared left",
   "Granny Oh, No! Please stop, I don't want to fight. Please leave me alone.",
 
   {"Choice": {
@@ -91,6 +115,7 @@ script["town-gc-slap"] = [
 ];
 
 script["town-henchman"] = [
+  "show Granny Mad left",
   "Granny......How did you know?...It doesn't matter, MAGMAMAN will reward me for taking you out for him!",
 
   "Engage in fight if win -> police come -> Store",

@@ -2,7 +2,9 @@
 
 
 script["sidewalk-scene"] = [
-  "scene blue with fadeIn",
+  "scene neighborhood with fadeIn",
+
+  "show GC Neutral left",
 
   "Cat meow",
   "You see a cat laying in the sidewalk",

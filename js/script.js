@@ -39,7 +39,7 @@ let particles = {
 
 // Define the music used in the game.
 const music = {
-
+  "Main": "398020__jackslay__reggae-whistle-with-me.mp3"
 };
 
 // Define the voice files used in the game.
@@ -65,6 +65,7 @@ const images = {
 // Define the backgrounds for each scene.
 const scenes = {
   "kitchen": "kitchen-scene.jpg",
+  "neighborhood": "neighborhood.jpg",
   "bus-stop": "bus-stop-scene.jpg",
   "crosswalk": "city-crosswalk-scene.jpg",
   "family-room": "family-room.jpg",
@@ -88,6 +89,25 @@ const characters = {
       "Neutral": "GlamCake-Neutral.png"
     }
   },
+  "Spectrum": {
+    "Name": "Spectrum",
+    "Color": "#abcdef",
+    "Images": {
+      "Gather": "spectrum-gather-power.png",
+      "Neutral": "spectrum-neutral.png",
+      "Throw": "spectrum-throw.png"
+    }
+  },
+  "MM": {
+    "Name": "Magma Man",
+    "Color": "#ff0000",
+    "Images": {
+      "Neutral": "magmaman-neutral.png",
+      "Arms-Up": "magmaman-arms-up.png",
+      "Lava": "magmaman-lava-ball.png",
+      "Throw": "magmaman-throw.png"
+    }
+  },
 
   // misc characters
   "Newscaster": {
@@ -97,13 +117,37 @@ const characters = {
     "Name": "Nyan Meow"
   },
   "Stranger": {
-    "Name": "Stranger"
+    "Name": "Stranger",
+    "Images": {
+      "Angry": "tired-guy-angry.png",
+      "Glow": "tired-guy-glow.png",
+      "Lasers": "tired-guy-lasers.png",
+      "Neutral": "tired-guy-resting-neutral.png",
+      "Scared": "tired-guy-scared.png"
+    }
   },
   "Granny": {
-    "Name": "Granny"
+    "Name": "Granny",
+    "Images": {
+      "Neutral": "granny-happy-neutral.png",
+      "Scared": "granny-scared.png",
+      "Mad": "granny-mad.png",
+      "Rock": "granny-rock.png",
+      "Throw": "granny-throw.png",
+      "ScaredM": "granny-scared-m.png"
+    }
   },
   "Clerk": {
-    "Name": "Clerk"
+    "Name": "Clerk",
+    "Images": {
+      "Angry": "store-clerk-angry.png",
+      "Atk-Start": "store-clerk-attack-start.png",
+      "Attack": "store-clerk-dollars-out.png",
+      "Bag-Happy": "store-clerk-holding-bag.png",
+      "Bag-Sad": "store-clerk-holding-bag-sad.png",
+      "Neutral": "store-clerk-neutral.png",
+      "Sad": "store-clerk-sad.png"
+    }
   },
 
   // probably unused
@@ -134,6 +178,8 @@ let script = {
   // The game starts here.
   "Start": [
     'clear',
+
+    // "play music Main loop",
 
     'scene kitchen with fadeIn',
     // 'scene black with fadeIn',

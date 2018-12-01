@@ -13,7 +13,12 @@ var bus_powerup = {
 
 script["bus-stop"] = [
   "scene bus-stop with fadeIn",
+  "show GC Neutral left",
+
   "You arrive at the bus stop...",
+
+  "show Stranger Neutral right",
+
   "There is a man there already waiting",
 
   "GC: Hello! How are you?",
@@ -52,10 +57,6 @@ script["bus-stop-early-am"] = [
 // THE AWKWARD WAIT OF AWESOME!!!!
 script["bus-stop-awkward-wait"] = [
   "All of you awkwardly wait for the bus...",
-  function() {
-    storage.player.wait_times = 0;
-    return true;
-  },
 
   "jump bus-stop-awkward-wait-fn"
 ];
@@ -64,8 +65,7 @@ script["bus-stop-awkward-wait-fn"] = [
   "...",
   {"Conditional": {
     "Condition": function() {
-      storage.player.wait_times += 1;
-      return Math.random() > 1/storage.player.wait_times;
+      return Math.random() > 0.9;
     },
     "True": "jump bus-stop-leave",
     "False": "jump bus-stop-awkward-wait-fn"
@@ -89,6 +89,8 @@ script["bus-stop-encounter"] = [
 ];
 
 script["bus-stop-scared"] = [
+  "show Stranger Scared right",
+
   "Stranger Oh, No! Please stop, I don't want to fight. Please leave me alone.",
   {"Choice": {
     "Sorry": {
@@ -102,12 +104,15 @@ script["bus-stop-scared"] = [
   }}
 ];
 
-script["bus-stop-scared-powerup"] =[
+script["bus-stop-scared-powerup"] = [
+  "show Stranger Scared right",
+
   "Glam Cake smacks Coconut Bomb on the back of the head",
   "GC Sorry sir, he can be rather impertinent.",
   "Glam Cake glares at Coconut Bomb",
   "Coconut Bomb sulks",
 
+  "show Stranger Neutral right",
   "Stranger It's fine, whatever...",
   "He takes a few steps away from you",
   "jump bus-stop-awkward-wait"
@@ -120,6 +125,8 @@ script["bus-stop-sorry"] = [
 ];
 
 script["bus-stop-henchman"] = [
+  "show Stranger Angry right",
+
   "Stranger ......How did you know?...",
   "Stranger It doesn't matter, MAGMAMAN will reward me for taking you out for him!",
 
