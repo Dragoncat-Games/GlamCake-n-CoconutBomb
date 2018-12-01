@@ -3,18 +3,18 @@
 
 script["kitchen"] = [
 
-  "show GC Neutral right with fadeIn",
+  "show GC Neutral-R right with fadeIn",
 
   "GC Hmmhmmhmmmhmmmm lets see, a little bit of this ...Oh! syrup!",
   "GC Coco Sweeeeetiiiie time to eat! IF only I had some more blueberries, Oh well",
 
   // metal music, coconutbomb appears
+  "show CB Grumpy left",
   "CB Glam Cake quit calling me Coco. I'm Coconut BOMB sis! stop being so mushy",
 
   "GC hmm-mm, ok coco sweetie come eat your pancakes.",
 
   "jump kitchen-encounter"
-
 ];
 
 script["kitchen-encounter"] = [
@@ -25,24 +25,43 @@ script["kitchen-encounter"] = [
     },
     "Whatev": {
       "Text": "Whatev",
-      "Do": "Coconut Bomb grumpily sits"
+      "Do": "jump kitchen-grumpy"
     },
     "Ooh": {
       "Text": "Ooh, pancakes",
-      "Do": "Coconut Bomb sits down excitedly"
+      "Do": "jump kitchen-pancakes"
     },
     "Not-Hungry": {
       "Text": "Not hungry",
-      "Do": "GC Suit yourself."
+      "Do": "jump kitchen-not-hungry"
     }
-  }},
-
-  "jump kitchen-food"
+  }}
 ];
+
+script["kitchen-grumpy"] = [
+  "show CB Grumpy left",
+  "show GC Unsure-R right",
+  "Coconut Bomb grumpily sits",
+  "jump kitchen-food"
+]
+
+script["kitchen-pancakes"] = [
+  "show CB Excited left",
+  "Coconut Bomb sits down excitedly",
+  "jump kitchen-food"
+]
+
+script["kitchen-not-hungry"] = [
+  "show CB Sad left",
+  "Show GC Unsure-R right",
+  "GC Suit yourself.",
+  "jump kitchen-food"
+]
 
 script["kitchen-powerup"] = [ undefined ];
 
 script["kitchen-powerup-fn"] = [
+  "show CB Power-Up left",
   function() {
     if (storage.player.breakfast) {
       rand_select(
@@ -59,13 +78,16 @@ script["kitchen-powerup-fn"] = [
           "GC Powering up won't solve all your problems",
           "GC Are you gonna do this forever?" ,
           "GC Ok, I'm gonna leave now",
-          "GC  All that energy may break the windows",
+          "GC All that energy may break the windows",
           "GC Do you want Breakfast or not?"
         ])
     } else {
       storage.player.breakfast = true;
-      script["kitchen-powerup"] = ["GC Not in the House",
-        "jump " + "kitchen-encounter"];
+      script["kitchen-powerup"] = [
+        "show GC Scold-R right",
+        "GC Not in the House",
+        "jump " + "kitchen-encounter"
+      ];
     }
 
     return true;
@@ -74,12 +96,17 @@ script["kitchen-powerup-fn"] = [
 ];
 
 script["kitchen-food"] = [
+  "show CB Neutral left",
+  "show GC Neutral-R right",
+
   "GC I was looking in the pantry and we don't have everthing for our spectrum day cake.",
 
+  "show CB Shocked left",
   "CB Spectrum Day! Today! Oh WOW I almost forgot.",
 
   "GC (Giggle) forgetting your favorite hero's honor day... you must have woken up on the wrong side of the bed.",
 
+  "show CB Neutral left",
   "CB (sheepsih) Yeah.....",
 
   "GC Will you come with me into town and help get the rest of the ingredients?",
@@ -107,6 +134,7 @@ script["kitchen-food-choice"] = [
 script["kitchen-food-powerup"] = [ undefined ];
 
 script["kitchen-food-powerup-fn"] = [
+  "show CB Power-Up left",
   function() {
     if (storage.player.breakfast) {
       rand_select(
@@ -128,8 +156,11 @@ script["kitchen-food-powerup-fn"] = [
         ])
     } else {
       storage.player.breakfast = true;
-      script["kitchen-food-powerup"] = ["GC Not in the House",
-        "jump " + "kitchen-food-choice"];
+      script["kitchen-food-powerup"] = [
+        "show GC Scold-R right",
+        "GC Not in the House",
+        "jump " + "kitchen-food-choice"
+      ];
     }
 
     return true;

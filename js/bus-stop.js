@@ -14,6 +14,7 @@ var bus_powerup = {
 script["bus-stop"] = [
   "scene bus-stop with fadeIn",
   "show GC Neutral left",
+  "show CB Neutral left",
 
   "You arrive at the bus stop...",
 
@@ -38,7 +39,9 @@ script["bus-stop"] = [
 ];
 
 script["bus-stop-rude"] = [
+  "show GC Scold-R",
   "GC Coconut Bomb, THAT'S rude.",
+  "show CB Sad left",
   "CB Sorry......",
   {"Choice": {
     "Early-AM": bus_early,
@@ -47,6 +50,7 @@ script["bus-stop-rude"] = [
 ];
 
 script["bus-stop-early-am"] = [
+  "show CB Neutral left",
   "Stranger Yeah.....late night too (yawn)",
 
   "CB Ooooookaaaay............",
@@ -78,6 +82,7 @@ script["bus-stop-leave"] = [
 ];
 
 script["bus-stop-encounter"] = [
+  "show CB Power-Up left",
   // Is this just some dude?  or are they one of MagmaMan's henchmen?
   {"Conditional": {
     "Condition": function() {
@@ -107,8 +112,12 @@ script["bus-stop-scared"] = [
 script["bus-stop-scared-powerup"] = [
   "show Stranger Scared right",
 
+  "show GC Scold-R",
+  "show CB Sad left",
   "Glam Cake smacks Coconut Bomb on the back of the head",
+  "show GC Neutral",
   "GC Sorry sir, he can be rather impertinent.",
+  "show GC Scold-R",
   "Glam Cake glares at Coconut Bomb",
   "Coconut Bomb sulks",
 
@@ -119,21 +128,40 @@ script["bus-stop-scared-powerup"] = [
 ];
 
 script["bus-stop-sorry"] = [
+  "show CB Sad left",
   "The stranger takes a few steps away from you...",
-
   "jump bus-stop-awkward-wait"
 ];
 
+let Stranger = new Enemy(
+  "Stranger",
+  50,
+  [
+    ["EYE LASORS!!!", 10],
+    ["DHOOM LAZORZ!!!", 20],
+    ["PEW PEW-PEW OUT MY EYES!!!!", 15],
+    ["STRANGER DANGER!!!", 0],
+    ["MAGMAMAN 4 EVAR!!!!!", 5]
+  ],
+  ["The stranger has been defeated by your awesomeness!",
+   "jump town"],
+  ["You lost to MagmaMans henchman: The Stranger...",
+   "jump Hospital"]
+);
+
+
 script["bus-stop-henchman"] = [
   "show Stranger Angry right",
+  "show GC Neutral left",
+  "play music Fight loop",
 
   "Stranger ......How did you know?...",
   "Stranger It doesn't matter, MAGMAMAN will reward me for taking you out for him!",
 
-  "insert fight here",
+  function () {
+    fight(Stranger);
+    return true;
+  },
 
-  "Engage in fight if win -> bus comes -> SCENE #5",
-  "Engage in fight if lose -> GAME OVER",
-
-  "jump town"
+  "jump player-fight"
 ];

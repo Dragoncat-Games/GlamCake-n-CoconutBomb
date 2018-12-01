@@ -31,7 +31,8 @@ let particles = {
 
 // Define the music used in the game.
 const music = {
-  "Main": "398020__jackslay__reggae-whistle-with-me.mp3"
+  "Main": "elevatormusic2.mp3",
+  "Fight": "fight-theme.mp3"
 };
 
 // Define the voice files used in the game.
@@ -56,6 +57,7 @@ const images = {
 
 // Define the backgrounds for each scene.
 const scenes = {
+  "title": "glamcake-and-coconut-bomb-title.jpg",
   "kitchen": "kitchen-scene.jpg",
   "neighborhood": "neighborhood.jpg",
   "bus-stop": "bus-stop-scene.jpg",
@@ -64,14 +66,37 @@ const scenes = {
   "hospital": "hospital-room.jpg",
   "store": "store-scene.jpg",
   "park": "park-scene.jpg",
-  "magma-park": "magma-park-scene.jpg"
+  "magma-park": "magma-park-scene.jpg",
+  "KO": "KO.png",
+  "game-over": "game-over.png"
 };
 
 // Define the Characters
 const characters = {
   "CB": {
     "Name": "Coconut Bomb",
-    "Color": "#fedcba"
+    "Color": "#fedcba",
+    "Directory": "CoconutBomb",
+    "Images": {
+      "Excited": "cocobomb-excited.png",
+      "Excited-Bag": "cocobomb-excited-bag.png",
+      "Front-Happy": "cocobomb-front-happy.png",
+      "Front-Sad": "cocobomb-front-sad.png",
+      "Front-Shocked": "cocobomb-front-shocked.png",
+      "Grumpy": "cocobomb-grumpy.png",
+      "Grumpy-Bag": "cocobomb-grumpy-bag.png",
+      "Neutral": "cocobomb-front-happy.png",
+      "Power-Up": "cocobomb-power.png",
+      "Sad": "cocobomb-sad.png",
+      "Shocked": "cocobomb-shocked.png",
+      "Suspicious": "cocobomb-suspicious.png",
+
+      "Angry": "cocobomb-grumpy.png",
+      "Attacked": "cocobomb-shocked.png",
+      "Angry-Power": "cocobomb-angry-power.png",
+      "Angry-Punch": "cocobomb-angry-punch.png",
+      "Punch": "cocobomb-punch.png"
+    }
   },
   "GC": {
     "Name": "Glam Cake",
@@ -87,6 +112,17 @@ const characters = {
       "Trans2": "glamcake-spec-trans-2.png",
       "Unsure": "glamcake-unsure.png",
 
+      "Neutral-R": "glamcake-neutral-m.png",
+      "Helpful-R": "glamcake-helpful-m.png",
+      "Sad-R": "glamcake-sad-m.png",
+      "Scold-R": "glamcake-scold-m.png",
+      "Serious-R": "glamcake-serious-m.png",
+      "Trans1-R": "glamcake-spec-trans-1-m.png",
+      "Trans2-R": "glamcake-spec-trans-2-m.png",
+      "Unsure-R": "glamcake-unsure-m.png",
+      "Angry-R": "glamcake-angry-m.png",
+
+      "Attacked": "glamcake-angry.png",
       "Angry": "glamcake-angry.png",
       "Atk-Start": "glamcake-prep-attack.png",
       "Attack": "glamcake-attack.png"
@@ -95,10 +131,15 @@ const characters = {
   "Spectrum": {
     "Name": "Spectrum",
     "Color": "#abcdef",
+    "Directory": "Spectrum",
     "Images": {
       "Atk-Start": "spectrum-gather-power.png",
       "Angry": "spectrum-neutral.png",
-      "Attack": "spectrum-throw.png"
+      "Attack": "spectrum-throw.png",
+
+      "Atk-Start-R": "spectrum-gather-power-m.png",
+      "Angry-R": "spectrum-neutral-m.png",
+      "Attack-R": "spectrum-throw-m.png"
     }
   },
   "MM": {
@@ -107,7 +148,7 @@ const characters = {
     "Images": {
       "Angry": "magmaman-neutral.png",
       "Arms-Up": "magmaman-arms-up.png",
-      "Atk-Atart": "magmaman-lava-ball.png",
+      "Atk-Start": "magmaman-lava-ball.png",
       "Attack": "magmaman-throw.png"
     }
   },
@@ -115,6 +156,13 @@ const characters = {
   // misc characters
   "Newscaster": {
     "Name": "Newscaster Bob"
+  },
+  "Police": {
+    "Name": "Police Officer Pinkerton",
+    "Color": "#fe03d8",
+    "Images": {
+      "Officer": "police.png"
+    }
   },
   "Cat": {
     "Name": "Nyan Meow",
@@ -142,12 +190,12 @@ const characters = {
     "Name": "Granny",
     "Images": {
       "Neutral": "granny-happy-neutral.png",
-      "Scared": "granny-scared.png",
+      "ScaredM": "granny-scared.png",
 
       "Angry": "granny-mad.png",
       "Atk-Start": "granny-rock.png",
       "Attack": "granny-throw.png",
-      "ScaredM": "granny-scared-m.png"
+      "Scared": "granny-scared-m.png"
     }
   },
   "Clerk": {
@@ -189,11 +237,10 @@ let script = {
   "Start": [
     'clear',
 
-    // "play music Main loop",
+    "play music Main loop",
 
     'scene kitchen with fadeIn',
-    // 'scene black with fadeIn',
-// music also
+
     "It is a peaceful morning in the town of Almond Blosom, as Glam Cake is calmly going about the finishing touches for breakfast...",
 
     "jump kitchen"

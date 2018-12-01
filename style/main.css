@@ -146,7 +146,7 @@ button:hover {
 
 /* Main Menu Styling */
 [data-menu="main"] {
-
+	background-image: url(./../img/scenes/glamcake-and-coconut-bomb-title.jpg);
 }
 
 /* Main Menu Buttons Styling */

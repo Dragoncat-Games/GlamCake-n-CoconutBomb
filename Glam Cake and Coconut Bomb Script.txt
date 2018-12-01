@@ -9,12 +9,12 @@ GC: "hmm-mm, ok coco sweetie come eat your pancakes.
 	CHOICES
 Pwer Up		Whatev		Oooh Pancakes!		Not Hungry
 |		|		|			|
-|		2a grumpy sit 	3a happy sit 		4a GC" Suit yourself" next SCENE 
-1a GlamC Rspnds						 
+|		2a grumpy sit 	3a happy sit 		4a GC" Suit yourself" next SCENE
+1a GlamC Rspnds
 |-> "Not in the House" "Please Stop" "SRSLY!!!???" "Stop scaring the neigbors"
 |-> "Keep it up and you'll be sorry" "RAINBOW PUNCH!" "I'm not fighting you" "not
-|-> funny" "Powering up won't solve all your problesm" Are you gonna do this forever?" 
-|->"Ok, I'm gonna leave now" " All that energy may break the windows" " Do you want 
+|-> funny" "Powering up won't solve all your problesm" Are you gonna do this forever?"
+|->"Ok, I'm gonna leave now" " All that energy may break the windows" " Do you want
 |-> Breakfast or not?"
 ---------------------------------------------------
 
@@ -112,7 +112,7 @@ Sorry		POWER UP!
 -  -   -   -   -   -  -  -  -   -  -    -   -   -
 B. Engage in fight
 
-Stranger:......How did you know?...It doesn't matter, MAGMAMAN will reward me for taking you out for him!" 
+Stranger:......How did you know?...It doesn't matter, MAGMAMAN will reward me for taking you out for him!"
 
 Engage in fight if win -> bus comes -> SCENE #5
 Engage in fight if lose -> GAME OVER
@@ -153,7 +153,7 @@ Help across street and continue on -> SCENE #6
 
 Keep walking GC will go back and help granny
 
-Granny: Oh! Thank you, it's always so hard on my own. 
+Granny: Oh! Thank you, it's always so hard on my own.
 
 Help across street and continue on -> SCENE #6
 ---------------------------------------------------------------------------
@@ -173,7 +173,7 @@ Sorry		POWER UP!
 -  -   -   -   -   -  -  -  -   -  -    -   -   -
 B. Engage in fight
 
-Granny:......How did you know?...It doesn't matter, MAGMAMAN will reward me for taking you out for him!" 
+Granny:......How did you know?...It doesn't matter, MAGMAMAN will reward me for taking you out for him!"
 
 Engage in fight if win -> police come -> SCENE #6
 Engage in fight if lose -> GAME OVER
@@ -270,6 +270,151 @@ If lose -> sprinkles are lost -> SCENE #8
 SCENE #8 walking back across the granny intersection back to the bus.
 People are screa,ing, alarms, crashing, "It's MAGMAMAN!!!!!!!"
 
+It's Magma Man!
+He's back!!!!!
+
+CB: (shocked) Magma Man? But how? I thought you told me he self destructed when he destroyed my family? Didn't he Glamcake?
+
+GC: (confused) I thought he did, Coconut Bomb, there was no sign of anyone left alive when he destoyed that island. You only survived because you had been tucked away safe from the blast before he blew his top.
+
+CB:(angry)
+
+	CHOICES
+
+POWER UP!		Run Away
+|			|
+1g.			ENDING #1
+----------------------------------------------------------------------------
+
+(1g.)
+
+ENGAGE in fight!
+
+CB: I've got Magma Man, Glamcake, get yourself to safety
+
+The fight doesn't go well (cocnut bomb cannot win on his own)
+
+GC: Coconut Bomb! Let me help!
+
+	CHOICES
+
+POWER UP!	Glamcake help!		No I can do this on my own.
+|		|			|
+1g.		2g.			3g.
+----------------------------------------------------------------------------
+
+(2g.)
+
+Glamcake transforms into SPECTRUM
+
+MM: NOOOOOOOOOOO!!!! Not Spectrum!!!!
+
+She takes out Magma Man in two hits taking no damage herself. Magma Man falls and the cops show up and he is taken away.
+
+CB: (Shocked) YOU?! are SPECTRUM???!!!!
+
+GC: (back to normal) Yep!
+
+CB: man......and I thought Spectrum was a dude or something..
+
+GC: (puzzled) yeah.....a lot of people think that... don't know why"
+
+CB: so that story you told me about how Spectrum saved me on island...that was you?
+
+GC: (sad) I arrived to late to do any real saving. We all thought Magma Man died in the explosion. I found you tucked away in the debries...the only survivor. I retired, adopted you and brought you home. The least I could do for failing to save your family then.
+
+CB: Glamcake, you are my family. All this time I;ve been LIVING with my favorite Super Hero and you didn't say anything?????
+
+GC: Well, no....otherwise it could put us all in danger. Now that you know, you need to keep it a secret. Spectrum showed up, defeated Magma Man and left before the authorities showed up. IT was cool, the end.
+
+	CHOICES
+
+OK	WHOA back up the intensity Sis.		I'm gonna tell everyone!	POWER UP
+|	|					|				|
+1h.	1h.					2h.				3h.
+----------------------------------------------------------------------------------------
+
+(3g.)
+
+GC: Please let me help!
+
+CB: He took everything from me! I'm doing this on my own.
+
+GC: Coconut Bomb, you can't do this on your own, listen to me!
+
+CB: Listen to you? Why? You aren't even my real family.
+
+GC: (sad) you...you don't mean that...
+
+CB: (angry) Yes, I DO. NOW GO AWAY.
+
+glamcake leaves crying.
+
+Magma Man gets another hit in 
+
+	CHOICES
+GLAMCAKE HELP!		I'm on my own
+|			|
+SCENE #10		and then it's GAME OVER.......SCENE #10
+
+----------------------------------------------------------------------------------------
+
+(1h.)
+
+GC: This is serious,Coconut Bomb. (sad) All the stuff fo the cake! Oh No!
+
+CB: (smile) Oh well, I got to meet spectrum, it's ok.
+
+Glamcake smiles. THE END......END CREDITS
+-----------------------------------------------------------------------------------------
+
+(2h.)
+
+Glamcake transforms into spectrum
+
+	CHOICES
+
+Just Kidding!		POWER UP
+|			|
+1h.			"Spectrum" attacks CB > SCENE #9			
+------------------------------------------------------------------------------------------
+
+(3h.)
+
+GC: Really, Coconut Bomb? Arn't you tired yet?
+
+	CHOICEs
+Yes		No Way!		 POWER UP
+|		|		|
+all lead to (1h.)
+------------------------------------------------------------------------------------------
+
+SCENE #9
+
+CB and GC in the kitchen scene at home
+
+CB: (confused)  I had a strange dream that you were Spectrum and Magma Man was back.
+
+GC: (confused)  Me? Spectrum? That's funny. As for Magma Man, don't you remember? You confronted him at the park yesterday. He's in jail now.
+
+CB: Wow! Really?!
+
+GC: Yep, Spectrum showed up at the end to finish the job and you got hit on the head.
+
+CB: So that's why my head hurts....is that cake I smell?
+
+GC: yep! it's almost done!
+
+THE END....END CREDITS
+-------------------------------------------------------------------------------------------
+
+SCENE #10
+
+Hospital scene.
+
+GC: (sad) Finally awake! I was so worried about you! Thankfully Spectrum showed up at the last minute and saved you! The doctors say you are going to be onk but that you will need to stay in the hospital a few days. (smile) When you get back home we'll make that cake, ok?
+
+THE END.....END CREDITS
 
 
 
@@ -277,7 +422,11 @@ People are screa,ing, alarms, crashing, "It's MAGMAMAN!!!!!!!"
 
 
 
- 
+
+
+
+
+
 
 
 
